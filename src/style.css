@@ -1,0 +1,153 @@
+/* PRIMARY COLORS
+- Green 500: hsl(158, 36%, 37%)
+- Green 700: hsl(158, 42%, 18%)
+
+--------------- NEUTRAL COLORS ---------------
+
+- Black: hsl(212, 21%, 14%)
+- Grey: hsl(228, 12%, 48%)
+- Cream: hsl(30, 38%, 92%)
+- White: hsl(0, 0%, 100%)
+
+--------------- FONT STYLE ---------------
+-MONTSERRAT
+-FRAUNCES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat',sans-serif;
+    background-color: white;
+    color: hsl(228, 12%, 48%);
+}
+
+
+.container {
+    background-color: white;
+    margin: 0 10px;
+    padding-bottom: 10px;
+    border-radius: 14px;
+    
+}
+
+.image-container {
+    margin: 25px 0;
+}
+
+.product-image {
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    padding-bottom: 0;
+}
+
+.text-section {
+    padding: 0 15px
+}
+
+.overtitle {
+    padding-bottom: 10px;
+}
+
+.title {
+    color: hsl(212, 21%, 14%);
+    font-family: 'fraunces', sans-serif;
+    padding-bottom: 10px;
+}
+
+.description {
+    line-height: 150%;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+#price-section {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.price {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'fraunces', sans-serif;
+    color: hsl(158, 36%, 37%);
+    padding: 10px;
+}
+
+.slash-price {
+    text-decoration:line-through;
+}
+
+
+.link {
+    display: block;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    margin: 20px 10px 20px 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 15px;
+    text-align: center;   
+}
+
+.product-image2 {
+        display: none;
+        
+    }
+
+@media screen and (min-width: 550px) {
+    .container {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    .product-image2 {
+        display: none;
+        
+    }
+  
+}
+
+@media screen and (min-width: 750px) {
+    .container {
+       display: flex;
+       max-width: 650px;
+       padding: 0;
+       margin-top: 100px;
+    }
+
+    .image-container{
+        margin: 0;
+    }
+
+    .product-image {
+        width: 325px;
+        display: none;
+    }
+
+    .product-image2{
+        display: block;
+        width: 325px;
+        height: 100%;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+        
+    }
+
+     
+    .flex {
+        width: 325px;
+        padding: 15px;
+    }
+
+}
